@@ -1,0 +1,25 @@
+
+service: memory-react
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: live
+  region: eu-central-1
+
+functions:
+  getImages:
+    handler: handler.images
+    events:
+      - http:
+          path: images
+          method: get
+          cors: true
+
+  debug:
+    handler: handler.debug
+    events:
+      - http:
+          path: debug
+          method: get
+          cors: true
