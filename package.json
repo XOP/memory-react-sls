@@ -11,5 +11,8 @@
   "dependencies": {
     "cross-fetch": "^3.0.1",
     "unsplash-js": "^4.8.0"
+  },
+  "devDependencies": {
+    "url-parse": "^1.4.3"
   }
 }
